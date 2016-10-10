@@ -30,7 +30,7 @@ configure what gets written to the XML using the following environment options.
 Specify configuration options as parameters to `docker run`, as follows:
 
 ```
---env='STCFG_OPTION=value'
+--env='OPTION=value'
 ```
 
 Full configuration reference: https://docs.syncthing.net/users/config.html
