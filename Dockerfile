@@ -26,12 +26,6 @@ RUN set -x \
     && tar -xvf "$SYNCTHING_TARBALL" --strip-components=1 "$(basename "$SYNCTHING_TARBALL" .tar.gz)"/syncthing \
     && mv syncthing /usr/local/bin/syncthing
 
-# Expose syncthing ports
-EXPOSE 8384/tcp
-EXPOSE 22000/tcp
-EXPOSE 21027/udp
-EXPOSE 22026/udp
-
 # Cleanup
 RUN set -x \
     && apt-get purge -y --auto-remove curl \

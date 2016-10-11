@@ -17,6 +17,8 @@ sudo docker run \
   --restart=always \
   --volume="${SYNCTHING_DIR}":"/home/syncthing" \
   --volume=/data:/data \
+  --expose=8384 \
+  --expose=22000 \
   --publish=8384:8384 \
   --publish=22000:22000 \
   providernl/syncthing
