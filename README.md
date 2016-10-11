@@ -41,6 +41,7 @@ Full configuration reference: https://docs.syncthing.net/users/config.html
 |-----------------------------------------------|------------------------------|-----------------------|
 | ST_GUI_TLS                                    | boolean                      | false                 |
 | ST_GUI_ADDRESS                                | ip:port                      | 127.0.0.1:8384        |
+| ST_LISTEN_ADDRESS                             | tcp(4|6)://ip:port           | default               |
 | ST_GLOBAL_ANNOUNCE_SERVER                     | HTTP(S) url, or default      | default               |
 | ST_GLOBAL_ANNOUNCE_ENABLED                    | boolean                      | true                  |
 | ST_LOCAL_ANNOUNCE_ENABLED                     | boolean                      | true                  |
