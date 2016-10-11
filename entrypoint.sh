@@ -11,6 +11,10 @@ if [[ ! -f $SYNCTHING_CONFIG ]]; then
     sed -i "s,<address>127.0.0.1:8384</address>,<address>$ST_GUI_ADDRESS</address>," $SYNCTHING_CONFIG
   fi
 
+  if [[ -n "$ST_LISTEN_ADDRESS" ]]; then
+    sed -i "s,<listenAddress>default</listenAddress>,<listenAddress>$ST_LISTEN_ADDRESS</listenAddress>," $SYNCTHING_CONFIG
+  fi
+
   if [[ -n "$ST_GLOBAL_ANNOUNCE_SERVER" ]]; then
     sed -i "s,<globalAnnounceServer>default</globalAnnounceServer>,<globalAnnounceServer>$ST_GLOBAL_ANNOUNCE_SERVER</globalAnnounceServer>," $SYNCTHING_CONFIG
   fi
