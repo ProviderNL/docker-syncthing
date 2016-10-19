@@ -42,6 +42,10 @@ if [[ ! -f $SYNCTHING_CONFIG ]]; then
   if [[ -n "$ST_AUTO_UPGRADE_INTERVAL_H" ]]; then
     sed -i "s,<autoUpgradeIntervalH>12</autoUpgradeIntervalH>,<autoUpgradeIntervalH>$ST_AUTO_UPGRADE_INTERVAL_H</autoUpgradeIntervalH>," $SYNCTHING_CONFIG
   fi
+
+  if [[ -n "$ST_RELEASES_URL" ]]; then
+    sed -i "s,<releasesURL>https://upgrades.syncthing.net/meta.json</releasesURL>,<releasesURL>$ST_RELEASES_URL</releasesURL>," $SYNCTHING_CONFIG
+  fi
 fi
 
 syncthing -home=$SYNCTHING_HOME
