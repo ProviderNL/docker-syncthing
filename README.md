@@ -37,18 +37,19 @@ Specify configuration options as parameters to `docker run`, as follows:
 
 Full configuration reference: https://docs.syncthing.net/users/config.html
 
-| Option                                        | Values                       | Default value         |
-|-----------------------------------------------|------------------------------|-----------------------|
-| ST_GUI_TLS                                    | boolean                      | false                 |
-| ST_GUI_ADDRESS                                | ip:port                      | 127.0.0.1:8384        |
-| ST_LISTEN_ADDRESS                             | tcp(4|6)://ip:port           | default               |
-| ST_GLOBAL_ANNOUNCE_SERVER                     | HTTP(S) url, or default      | default               |
-| ST_GLOBAL_ANNOUNCE_ENABLED                    | boolean                      | true                  |
-| ST_LOCAL_ANNOUNCE_ENABLED                     | boolean                      | true                  |
-| ST_RELAYS_ENABLED                             | boolean                      | true                  |
-| ST_START_BROWSER                              | boolean                      | true                  |
-| ST_UR_ACCEPTED                                | -1, 0 or 1                   | 0                     |
-| ST_AUTO_UPGRADE_INTERVAL_H                    | integer                      | 12                    |
+| Option                                        | Values                       | Default value                            |
+|-----------------------------------------------|------------------------------|------------------------------------------|
+| ST_GUI_TLS                                    | boolean                      | false                                    |
+| ST_GUI_ADDRESS                                | ip:port                      | 127.0.0.1:8384                           |
+| ST_LISTEN_ADDRESS                             | tcp(4 or 6)://ip:port        | default                                  |
+| ST_GLOBAL_ANNOUNCE_SERVER                     | HTTP(S) url, or default      | default                                  |
+| ST_GLOBAL_ANNOUNCE_ENABLED                    | boolean                      | true                                     |
+| ST_LOCAL_ANNOUNCE_ENABLED                     | boolean                      | true                                     |
+| ST_RELAYS_ENABLED                             | boolean                      | true                                     |
+| ST_START_BROWSER                              | boolean                      | true                                     |
+| ST_UR_ACCEPTED                                | -1, 0 or 1                   | 0                                        |
+| ST_AUTO_UPGRADE_INTERVAL_H                    | integer                      | 12                                       |
+| ST_RELEASES_URL                               | HTTP(S) url                  | https://upgrades.syncthing.net/meta.json |
 
 
 ## Troubleshooting
